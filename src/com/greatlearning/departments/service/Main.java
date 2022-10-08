@@ -1,0 +1,37 @@
+package com.greatlearning.departments.service;
+
+import com.greatlearning.departments.AdminDepartment;
+import com.greatlearning.departments.HrDepartment;
+import com.greatlearning.departments.TechDepartment;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AdminDepartment adminDept = new AdminDepartment();
+		HrDepartment hrDept = new HrDepartment();
+		TechDepartment techDept = new TechDepartment();
+
+		System.out.println("Welcome to " + adminDept.departmentName());
+		System.out.println(adminDept.getTodaysWork());
+		System.out.println(adminDept.getWorkDeadline());
+		System.out.println(adminDept.isTodayAHoliday());
+
+		System.out.println("");
+
+		System.out.println("Welcome to " + hrDept.departmentName());
+		System.out.println(hrDept.getTodaysWork());
+		System.out.println(hrDept.doActivity());
+		System.out.println(hrDept.getWorkDeadline());
+		System.out.println(hrDept.isTodayAHoliday());
+
+		System.out.println("");
+
+		System.out.println("Welcome to " + techDept.departmentName());
+		System.out.println(techDept.getTodaysWork());
+		System.out.println(techDept.getWorkDeadline());
+		System.out.println(techDept.getTechStackInformation());
+		System.out.println(techDept.isTodayAHoliday());
+
+	}
+}
